@@ -29,7 +29,7 @@ class Main extends Component {
 				 				 <div className="item">
 				 				  <div className="item-title">
 				 				   <h2>{item.data[0].title}</h2>
-				 				   <p>date: {shortDate}</p>
+				 				   <p><i class="fal fa-calendar"></i> {shortDate}</p>
 				 				  </div>
 				 				  <div className="item-description">
 				 				   <p>{item.data[0].description}</p>
