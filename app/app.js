@@ -75,7 +75,7 @@ class Root extends Component {
 			});
 		}
 
-		if(e.target.value === 'Latest') {
+		if(e.target.value === 'Newest') {
 			items = this.state.data.items.sort((item1, item2) => {
 				let item_date1 = new Date(item1.data[0].date_created);
 				let item_date2 = new Date(item2.data[0].date_created);

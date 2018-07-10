@@ -15,7 +15,7 @@ class Main extends Component {
 			return (
 				<section className="results-section">
 				 <div className="results-tool-bar">
-				  <h1>Results after "<span>{this.props.term ? this.props.term : 'default'}</span>" sort by: <select onChange={this.props.handleSelect}><option value="Oldest">Oldest</option><option defaultValue>Latest</option></select></h1>
+				  <h1>Results after "<span>{this.props.term ? this.props.term : 'default'}</span>" sort by: <select onChange={this.props.handleSelect}><option value="Oldest">Oldest</option><option defaultValue>Newest</option></select></h1>
 
 				 </div>
 				 <div className="flex-row">
@@ -30,7 +30,7 @@ class Main extends Component {
 				 				 <div className="item">
 				 				  <div className="item-title">
 				 				   <h2>{item.data[0].title}</h2>
-				 				   <p><i class="fal fa-calendar"></i> {shortDate}</p>
+				 				   <p><i class="far fa-calendar-alt fa-2x"></i> {shortDate}</p>
 				 				  </div>
 				 				  <div className="item-description">
 				 				   <p>{ReactHtmlParser(item.data[0].description)}</p>
