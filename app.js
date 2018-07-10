@@ -7,7 +7,7 @@ const compiler = webpack(webpackConfig);
 const webpackDevMiddleware = require('webpack-dev-middleware');
 const bodyParser = require('body-parser');
 
-app.set('PORT', process.env.NODE_ENV || 8080);
+app.set('PORT', process.env.PORT || 8080);
 
 app.use(webpackDevMiddleware(compiler, {
 	open: true,
