@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import ReactHtmlParser from 'react-html-parser';
 import axios from 'axios';
 import {Link} from 'react-router-dom';
 import './main.less';
@@ -32,7 +33,7 @@ class Main extends Component {
 				 				   <p><i class="fal fa-calendar"></i> {shortDate}</p>
 				 				  </div>
 				 				  <div className="item-description">
-				 				   <p>{item.data[0].description}</p>
+				 				   <p>{ReactHtmlParser(item.data[0].description)}</p>
 				 				  </div>
 				 				  <div className="item-thumbnail">
 				 				   <a target="_blank" href={linkTo}><img src={item.links[0].href} alt={item.data.title}/></a>
