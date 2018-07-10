@@ -26,7 +26,7 @@ class Main extends Component {
 				 				 <div className="item">
 				 				  <div className="item-title">
 				 				   <h2>{item.data[0].title}</h2>
-				 				   <p>date: {item.data[0].date}</p>
+				 				   <p>date: {item.data[0].created_date}</p>
 				 				  </div>
 				 				  <div className="item-description">
 				 				   <p>{item.data[0].description}</p>
