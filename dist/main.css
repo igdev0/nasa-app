@@ -130,6 +130,9 @@ body {
 .results-section .flex-row .flex-col .item .item-description p {
   color: #555;
 }
+.results-section .flex-row .flex-col .item .item-description p a {
+  color: #449988;
+}
 .results-section .flex-row .flex-col .item .item-thumbnail {
   width: 100%;
   height: auto;
