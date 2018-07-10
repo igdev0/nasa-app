@@ -21,12 +21,15 @@ class Main extends Component {
 				 	{
 				 		this.props.data.items.map((item, key) => {
 				 		 	let linkTo = item.links[0].href.replace('thumb', 'orig');
+				 		 	let dateCreated = new Date(item.data[0].date_created);
+				 		 	let shortDate = `${dateCreated.getFullYear()}/${dateCreated.getMonth() + 1}/${dateCreated.getDate()}`; // getMonth is zero-based;
+
 				 			return (
 				 				<div key={key} className="flex-col">
 				 				 <div className="item">
 				 				  <div className="item-title">
 				 				   <h2>{item.data[0].title}</h2>
-				 				   <p>date: {item.data[0].created_date}</p>
+				 				   <p>date: {shortDate}</p>
 				 				  </div>
 				 				  <div className="item-description">
 				 				   <p>{item.data[0].description}</p>
