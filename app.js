@@ -10,6 +10,8 @@ const bodyParser = require('body-parser');
 app.set('PORT', process.env.NODE_ENV || 8080);
 
 app.use(webpackDevMiddleware(compiler, {
+	open: true,
+	hot: true,
 	publicPath: webpackConfig.output.publicPath
 }))
 
